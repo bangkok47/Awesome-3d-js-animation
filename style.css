@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	perspective: 1000px;
+}
+
+.container {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	transition: all 0.2s ease; 
+	transform-style: preserve-3d;
+	min-height: 80vh;
+	width: 30rem;
+	border-radius: 30px;
+	padding: 0rem 5rem;
+	box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.product img{
+	width: 20rem;
+	z-index: 2;
+	transition: all 0.75s ease-out;
+}
+
+.product {
+	min-height:30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.circle {
+	width: 15rem;
+	height: 15rem;
+	background: linear-gradient(
+		to right,
+		rgba(245, 70, 66, 0.75),
+		rgba(8, 83, 156, 0.75)
+		);
+	position: absolute;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.title h1 {
+	font-size: 3rem;
+}
+
+.title {
+	transition: all 0.75s ease-out;
+}
+
+.product-info h3 {
+	font-size: 1.5rem;
+	padding: 2rem 0rem;
+	color: #696969;
+}
+
+.product-info {
+	transition: all 0.75s ease-out;
+}
+
+.size {
+	display: flex;
+	justify-content: space-between;
+	transition: all 0.75s ease-out;
+}
+
+.size button {
+	padding: 0.5rem 1.5rem;
+	background: none;
+	border: none;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 30px;
+	font-weight: bold;
+	color: #696969;
+	transition: all 0.75s ease-out;
+}
+
+button.active {
+	background: #696969;
+	color: #FFF;
+}
+
+.purchase{
+	margin-top: 5rem;
+	transition: all 0.75s ease-out;
+}
+
+.purchase button {
+	width: 100%;
+	padding: 1rem 0rem;
+	background: #f54642;
+	border: none;
+	color: #FFF;
+	border-radius: 30px;
+	font-weight: bolder;
+}
